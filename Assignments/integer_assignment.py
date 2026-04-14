@@ -45,6 +45,7 @@ number=12345
 total=0
 for i in range(5):
   total+=number%10
+  number/=10
 print(total)
 print("-" * 50))
 
