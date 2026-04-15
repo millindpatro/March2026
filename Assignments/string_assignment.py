@@ -18,39 +18,75 @@ print("-" * 50)
 
 # Question 1: Reverse the string "Python Programming"
 print("Question 1: Reverse the string 'Python Programming'")
-# Your code here
+string1='Python Programming'
+print(string1[::-1])
+print("-" * 50)
 
 # Question 2: Check if "racecar" is a palindrome
 print("\nQuestion 2: Check if 'racecar' is a palindrome")
-# Your code here
+string1="racecar"
+n = len(string1)
+flag=0
+for i in range(0,n):
+  if(string1[i]!=string1[n-1]):
+    flag=1
+  n-=1
+if(flag==0):
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+print("-" * 50)
 
 # Question 3: Count the number of words in "Python is a great programming language"
 print("\nQuestion 3: Count the number of words in 'Python is a great programming language'")
-# Your code here
+string1= 'Python is a great programming language'
+ans=string1.split()
+print(len(ans))
+print("-" * 50)
 
 # Question 4: Convert "hello world" to title case
 print("\nQuestion 4: Convert 'hello world' to title case")
-# Your code here
+string1='hello world'
+print(string1.capitalize())
+print("-" * 50)
 
 # Question 5: Find the length of string "Data Science"
 print("\nQuestion 5: Find the length of string 'Data Science'")
-# Your code here
+string1='Data Science'
+print(len(string1))
+print("-" * 50)
 
 # Question 6: Replace all spaces with underscores in "Machine Learning"
 print("\nQuestion 6: Replace all spaces with underscores in 'Machine Learning'")
-# Your code here
+string1='Machine Learning'
+string1.replace(' ','_')
+print("-" * 50)
 
 # Question 7: Check if "python" is in "Python Programming Language"
 print("\nQuestion 7: Check if 'python' is in 'Python Programming Language'")
-# Your code here
+string1='Python Programming Language'
+ans=string1.split()
+if('python' in ans):
+  print("Present")
+else:
+  print('Not Present')
+print("-" * 50)
 
 # Question 8: Extract the first 5 characters from "Artificial Intelligence"
 print("\nQuestion 8: Extract the first 5 characters from 'Artificial Intelligence'")
-# Your code here
+string1='Artificial Intelligence'
+ans=''
+for i in range(5):
+  ans+=string1[i]
+print(ans)
+print("-" * 50)
+
 
 # Question 9: Convert "UPPERCASE" to lowercase
 print("\nQuestion 9: Convert 'UPPERCASE' to lowercase")
-# Your code here
+string1='UPPERCASE'
+print(string1.lower())
+print("-" * 50)
 
 # Question 10: Remove all vowels from "Computer Science"
 print("\nQuestion 10: Remove all vowels from 'Computer Science'")
