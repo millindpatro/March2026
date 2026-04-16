@@ -19,27 +19,59 @@ print("-" * 50)
 
 # Question 1: Create a list of first 10 square numbers
 print("Question 1: Create a list of first 10 square numbers")
-# Your code here
+ans=[]
+
+for i in range(1,11):
+  ans.append(i*i)
+print(ans)
+print("-" * 50)
 
 # Question 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print("\nQuestion 2: Find the sum of all even numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
-# Your code here
+list1=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ans=0
+for i in list1:
+  if(i%2==0):
+    ans+=i
+print(ans)
+
+print("-" * 50)
 
 # Question 3: Remove duplicates from [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
 print("\nQuestion 3: Remove duplicates from [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]")
-# Your code here
+
+list1=[1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
+set1=set()
+for i in list1:
+    set1.add(i)
+list1=set1
+print(list1)
+print("-" * 50)
 
 # Question 4: Sort the list [64, 34, 25, 12, 22, 11, 90] in descending order
 print("\nQuestion 4: Sort the list [64, 34, 25, 12, 22, 11, 90] in descending order")
-# Your code here
+list1=[64, 34, 25, 12, 22, 11, 90]
+list1.sort(reverse=True)
+print(list1)
+print("-" * 50)
 
 # Question 5: Find the average of numbers in [15, 23, 31, 42, 56, 78, 91]
 print("\nQuestion 5: Find the average of numbers in [15, 23, 31, 42, 56, 78, 91]")
-# Your code here
+total=0
+list1=[15, 23, 31, 42, 56, 78, 91]
+for i in list1:
+  total+=i
+print(total/len(liest1))
+print("-" * 50)
+
 
 # Question 6: Create a list of first 15 Fibonacci numbers
 print("\nQuestion 6: Create a list of first 15 Fibonacci numbers")
-# Your code here
+list1=[]
+for i in range(15):
+  list1.append(i)
+  
+  
 
 # Question 7: Find the second largest number in [45, 67, 23, 89, 12, 34, 78]
 print("\nQuestion 7: Find the second largest number in [45, 67, 23, 89, 12, 34, 78]")
