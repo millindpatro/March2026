@@ -143,19 +143,23 @@ print("\nQuestion 23: Extract first element from each tuple in [(1, 'a'), (2, 'b
 
 # Question 24: Create a list of dictionaries: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
 print("\nQuestion 24: Create a list of dictionaries: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]")
-# Your code here
+list1=[{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
 
 # Question 25: Extract all 'name' values from list of dictionaries
 print("\nQuestion 25: Extract all 'name' values from list of dictionaries")
-# Your code here
+print(list1[0].get('name'))
+print(list1[1].get('name'))
 
 # Question 26: Find the person with maximum age in list of dictionaries
 print("\nQuestion 26: Find the person with maximum age in list of dictionaries")
-# Your code here
+if(list1[0].get('name')>list1[1].get('name')):
+  print(list1[0].get('name'))
+else:
+  print(list1[1].get('name'))
 
 # Question 27: Create a 4D list: [[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
 print("\nQuestion 27: Create a 4D list: [[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]")
-# Your code here
+list1=[[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
 
 # Question 28: Find the maximum value in 4D list
 print("\nQuestion 28: Find the maximum value in 4D list")
