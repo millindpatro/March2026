@@ -75,15 +75,24 @@ for i in range(15):
 
 # Question 7: Find the second largest number in [45, 67, 23, 89, 12, 34, 78]
 print("\nQuestion 7: Find the second largest number in [45, 67, 23, 89, 12, 34, 78]")
-# Your code here
+list1=[45, 67, 23, 89, 12, 34, 78]
+list1 = sorted(list1)
+list1[-2]
 
 # Question 8: Reverse the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print("\nQuestion 8: Reverse the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
-# Your code here
+list1=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list1=sorted(list1,reverse=True)
+list1
 
 # Question 9: Count how many times 5 appears in [1, 5, 2, 5, 3, 5, 4, 5, 6]
 print("\nQuestion 9: Count how many times 5 appears in [1, 5, 2, 5, 3, 5, 4, 5, 6]")
-# Your code here
+cnt=0
+list1= [1, 5, 2, 5, 3, 5, 4, 5, 6]
+for i in list1:
+    if i==5: 
+        cnt+=1
+print(cnt)
 
 # Question 10: Create a list of prime numbers between 1 and 50
 print("\nQuestion 10: Create a list of prime numbers between 1 and 50")
@@ -95,51 +104,79 @@ print("\nQuestion 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
 
 # Question 12: Find common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8]
 print("\nQuestion 12: Find common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8]")
-# Your code here
+list1=[1, 2, 3, 4, 5]
+list2=[4, 5, 6, 7, 8]
+set1=set(list1)
+set2=set(list2)
+set3=set()
+set3=set1.intersection(set2)
+set3=list(set3)
+print(set3)
 
 # Question 13: Create a list of lists: [[1, 2], [3, 4], [5, 6]]
 print("\nQuestion 13: Create a list of lists: [[1, 2], [3, 4], [5, 6]]")
-# Your code here
+list1=[[1, 2], [3, 4], [5, 6]]
+print(list1)
 
 # Question 14: Find the sum of each sublist in [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 14: Find the sum of each sublist in [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
-# Your code here
+list1=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for i in range(0,3):
+    list1[i]=sum(list1[i]) 
+print(list1)
 
 # Question 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
-# Your code here
+
 
 # Question 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]
 print("\nQuestion 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]")
-# Your code here
+list1=[[1, 5, 3], [9, 2, 7], [4, 8, 6]]
+for i in list1:
+    print(max(i))
 
 # Question 17: Create a 3D list: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 print("\nQuestion 17: Create a 3D list: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]")
-# Your code here
+list1= [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 
 # Question 18: Find the sum of all elements in 3D list [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 print("\nQuestion 18: Find the sum of all elements in 3D list [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]")
-# Your code here
+list1= [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+ans=0
+for i in range(0,2):
+    for j in range(0,2):
+        ans+=sum(list1[i][j])
+print(ans)
 
 # Question 19: Extract all even numbers from nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 19: Extract all even numbers from nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
-# Your code here
+list1=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+list2=[]
+for i in range(0,3):
+    for j in range(0,3):
+        if(list1[i][j] %2 ==0):
+            list2.append(list1[i][j])
+print(list2)
 
 # Question 20: Create a list of mixed data types: [1, "hello", 3.14, True, [1, 2, 3]]
 print("\nQuestion 20: Create a list of mixed data types: [1, 'hello', 3.14, True, [1, 2, 3]]")
-# Your code here
+list1=[1, 'hello', 3.14, True, [1, 2, 3]]
 
 # Question 21: Find the length of each string in ["apple", "banana", "cherry", "date"]
 print("\nQuestion 21: Find the length of each string in ['apple', 'banana', 'cherry', 'date']")
-# Your code here
+list1=['apple', 'banana', 'cherry', 'date']
+for i in range(0,len(list1)):
+    print(len(list1[i]))
 
 # Question 22: Create a list of tuples: [(1, 'a'), (2, 'b'), (3, 'c')]
 print("\nQuestion 22: Create a list of tuples: [(1, 'a'), (2, 'b'), (3, 'c')]")
-# Your code here
+list1=[(1, 'a'), (2, 'b'), (3, 'c')]
 
 # Question 23: Extract first element from each tuple in [(1, 'a'), (2, 'b'), (3, 'c')]
 print("\nQuestion 23: Extract first element from each tuple in [(1, 'a'), (2, 'b'), (3, 'c')]")
-# Your code here
+list1=[(1, 'a'), (2, 'b'), (3, 'c')]
+for i in range(0,len(list1)):
+    print(list1[i][0])
 
 # Question 24: Create a list of dictionaries: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]
 print("\nQuestion 24: Create a list of dictionaries: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}]")
@@ -163,27 +200,34 @@ list1=[[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [1
 
 # Question 28: Find the maximum value in 4D list
 print("\nQuestion 28: Find the maximum value in 4D list")
-# Your code here
+list1=[[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[13, 14], [15, 16]]]]
+for i in range(0,len(list1)):
+    for j in range(0,len(list1)):
+        list2=(max(list1[i][j]))
+list3=max(list2)
+print(list3)
+
 
 # Question 29: Create a list of sets: [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
 print("\nQuestion 29: Create a list of sets: [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]")
-# Your code here
+list1= [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
 
 # Question 30: Find the union of all sets in list of sets
 print("\nQuestion 30: Find the union of all sets in list of sets")
-# Your code here
+list1= [{1, 2, 3}, {4, 5, 6}, {7, 8, 9}]
+print(list1[0].union(list1[1]).union(list1[2]))
 
 # Question 31: Create a list of complex numbers: [1+2j, 3+4j, 5+6j]
 print("\nQuestion 31: Create a list of complex numbers: [1+2j, 3+4j, 5+6j]")
-# Your code here
+list1=[1+2j, 3+4j, 5+6j]
 
 # Question 32: Find the magnitude of each complex number in list
 print("\nQuestion 32: Find the magnitude of each complex number in list")
-# Your code here
+
 
 # Question 33: Create a nested list with different levels: [1, [2, 3], [4, [5, 6]], 7]
 print("\nQuestion 33: Create a nested list with different levels: [1, [2, 3], [4, [5, 6]], 7]")
-# Your code here
+list1=[1, [2, 3], [4, [5, 6]], 7]
 
 # Question 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]
 print("\nQuestion 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]")
