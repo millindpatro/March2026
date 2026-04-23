@@ -1,0 +1,43 @@
+
+star - facts and dimensions. denormalized
+
+snowflake - more defined subgroups normalized
+
+
+
+facts - numerical
+dimensions - types
+
+group by - aggregation/ summarization
+RCA
+
+multiple group by - cross product of attributes
+mean vs median vs mode (outlier)
+
+
+min max sum avg count median mode
+
+======xxx======
+job role wise no of employees
+
+select job_role, count(emp_id) from schema.tablename group by job_role;
+
+
+dept and job role wise wmployee count
+
+select department, job_role, count(emp_id) from schema.tablename group by department, job_role;
+
+
+dept and job role wise max salary
+
+select department, job_role, max(salary) from schema.tablename group by department, job_role;
+
+
+city, dept and job role wise total experience
+
+select city, department, job_role, sum(experience_years) from schema.tablename group by city, department, job_role;
+
+HAVING - post aggregation filter
+WHERE - pre aggregation filter
+
+
