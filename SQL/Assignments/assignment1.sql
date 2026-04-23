@@ -1,1 +1,10 @@
-
+-- Find departments having more than 1 employee
+-- Find job roles where total salary is greater than 60,000
+-- Find cities where average salary is greater than 50,000
+-- Find departments where maximum salary is above 65,000
+-- Find job roles where total experience is greater than 5 years
+-- Find departments having average age greater than 30
+-- Find cities with more than 1 active employee
+-- Find job roles where minimum salary is greater than 40,000
+-- Find departments where total salary is less than 100,000
+-- Find cities where average experience is greater than 5 year
