@@ -235,7 +235,7 @@ print("\nQuestion 34: Count the depth of nesting in [1, [2, 3], [4, [5, 6]], 7]"
 
 # Question 35: Create a list of functions: [len, str, int, float]
 print("\nQuestion 35: Create a list of functions: [len, str, int, float]")
-# Your code here
+list1=[len, str, int, float]
 
 # Question 36: Apply each function in list to string "123"
 print("\nQuestion 36: Apply each function in list to string '123'")
@@ -243,7 +243,7 @@ print("\nQuestion 36: Apply each function in list to string '123'")
 
 # Question 37: Create a list of lambda functions: [lambda x: x*2, lambda x: x**2, lambda x: x+1]
 print("\nQuestion 37: Create a list of lambda functions: [lambda x: x*2, lambda x: x**2, lambda x: x+1]")
-# Your code here
+list1=[lambda x: x*2, lambda x: x**2, lambda x: x+1]
 
 # Question 38: Apply each lambda function to 5
 print("\nQuestion 38: Apply each lambda function to 5")
@@ -251,7 +251,7 @@ print("\nQuestion 38: Apply each lambda function to 5")
 
 # Question 39: Create a list of classes: [list, dict, set, tuple]
 print("\nQuestion 39: Create a list of classes: [list, dict, set, tuple]")
-# Your code here
+list1=[list, dict, set, tuple]
 
 # Question 40: Create instances of each class in list
 print("\nQuestion 40: Create instances of each class in list")
@@ -259,40 +259,54 @@ print("\nQuestion 40: Create instances of each class in list")
 
 # Question 41: Create a list of None values: [None, None, None, None]
 print("\nQuestion 41: Create a list of None values: [None, None, None, None]")
-# Your code here
+list1=[None, None, None, None]
 
 # Question 42: Replace all None values with 0 in list
 print("\nQuestion 42: Replace all None values with 0 in list")
-# Your code here
+list1=[None, None, None, None]
+for i in range(0,len(list1)):
+    if(list1[i]==None):
+        list1[i]=0
+print(list1)
 
 # Question 43: Create a list of boolean values: [True, False, True, False]
 print("\nQuestion 43: Create a list of boolean values: [True, False, True, False]")
-# Your code here
+list1=[True, False, True, False]
 
 # Question 44: Count True values in boolean list
 print("\nQuestion 44: Count True values in boolean list")
-# Your code here
+list1=[True, False, True, False]
+cnt=0
+for i in range(0,len(list1)):
+    if(list1[i]==True):
+        cnt+=1
+  print(cnt)
 
 # Question 45: Create a list of ranges: [range(3), range(5), range(2)]
 print("\nQuestion 45: Create a list of ranges: [range(3), range(5), range(2)]")
-# Your code here
+list1=[range(3), range(5), range(2)]
 
 # Question 46: Convert each range to list
 print("\nQuestion 46: Convert each range to list")
-# Your code here
+list1=[range(3), range(5), range(2)]
+list2=[]
+for i in range(0,len(list1)):
+    for j in list1[i]:
+        list2.append(j)
+print(list2)
 
 # Question 47: Create a list of generators: [(x for x in range(3)), (x for x in range(5))]
 print("\nQuestion 47: Create a list of generators: [(x for x in range(3)), (x for x in range(5))]")
-# Your code here
+list1=[(x for x in range(3)), (x for x in range(5))]
 
 # Question 48: Convert each generator to list
 print("\nQuestion 48: Convert each generator to list")
-# Your code here
+
 
 # Question 49: Create a list of iterators: [iter([1, 2, 3]), iter([4, 5, 6])]
 print("\nQuestion 49: Create a list of iterators: [iter([1, 2, 3]), iter([4, 5, 6])]")
-# Your code here
+list1=[iter([1, 2, 3]), iter([4, 5, 6])]
 
 # Question 50: Extract all elements from each iterator
 print("\nQuestion 50: Extract all elements from each iterator")
-# Your code here 
+ 
