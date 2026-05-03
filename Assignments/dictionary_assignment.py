@@ -167,15 +167,17 @@ print("\nQuestion 30: Replace all None values with 0")
 
 # Question 31: Create a dictionary with boolean values: {'is_active': True, 'is_admin': False}
 print("\nQuestion 31: Create a dictionary with boolean values: {'is_active': True, 'is_admin': False}")
-# Your code here
+d = {'is_active': True, 'is_admin': False}
+print(d)
 
 # Question 32: Count True values in boolean dictionary
 print("\nQuestion 32: Count True values in boolean dictionary")
-# Your code here
+print(sum(d.values()))
 
 # Question 33: Create a dictionary with complex numbers: {'z1': 3+4j, 'z2': 1+2j}
 print("\nQuestion 33: Create a dictionary with complex numbers: {'z1': 3+4j, 'z2': 1+2j}")
-# Your code here
+d = {'z1': 3+4j, 'z2': 1+2j}
+print(d)
 
 # Question 34: Find magnitude of each complex number
 print("\nQuestion 34: Find magnitude of each complex number")
@@ -183,19 +185,21 @@ print("\nQuestion 34: Find magnitude of each complex number")
 
 # Question 35: Create a 4-level nested dictionary
 print("\nQuestion 35: Create a 4-level nested dictionary")
-# Your code here
+d = {'a': {'b': {'c': {'d': 100}}}}
+print(d)
 
 # Question 36: Access deepest value in 4-level nested dictionary
 print("\nQuestion 36: Access deepest value in 4-level nested dictionary")
-# Your code here
+print(d['a']['b']['c']['d'])
 
 # Question 37: Create a dictionary with range values: {'r1': range(3), 'r2': range(5)}
 print("\nQuestion 37: Create a dictionary with range values: {'r1': range(3), 'r2': range(5)}")
-# Your code here
+d = {'r1': range(3), 'r2': range(5)}
+print(d)
 
 # Question 38: Convert each range to list
 print("\nQuestion 38: Convert each range to list")
-# Your code here
+
 
 # Question 39: Create a dictionary with generator values
 print("\nQuestion 39: Create a dictionary with generator values")
@@ -207,7 +211,8 @@ print("\nQuestion 40: Convert each generator to list")
 
 # Question 41: Create a dictionary with iterator values
 print("\nQuestion 41: Create a dictionary with iterator values")
-# Your code here
+d = {'it1': iter([1,2,3]), 'it2': iter("abc")}
+print(d)
 
 # Question 42: Extract all elements from each iterator
 print("\nQuestion 42: Extract all elements from each iterator")
@@ -215,7 +220,8 @@ print("\nQuestion 42: Extract all elements from each iterator")
 
 # Question 43: Create a dictionary with nested lists: {'matrix': [[1, 2], [3, 4]], 'vector': [5, 6, 7]}
 print("\nQuestion 43: Create a dictionary with nested lists: {'matrix': [[1, 2], [3, 4]], 'vector': [5, 6, 7]}")
-# Your code here
+d = {'matrix': [[1, 2], [3, 4]], 'vector': [5, 6, 7]}
+print(d)
 
 # Question 44: Find sum of each nested list
 print("\nQuestion 44: Find sum of each nested list")
@@ -223,19 +229,21 @@ print("\nQuestion 44: Find sum of each nested list")
 
 # Question 45: Create a dictionary with nested dictionaries: {'config': {'db': {'host': 'localhost', 'port': 5432}}}
 print("\nQuestion 45: Create a dictionary with nested dictionaries: {'config': {'db': {'host': 'localhost', 'port': 5432}}}")
-# Your code here
+d = {'config': {'db': {'host': 'localhost', 'port': 5432}}}
+print(d)
 
 # Question 46: Access database port from nested configuration
 print("\nQuestion 46: Access database port from nested configuration")
-# Your code here
+print(d['config']['db']['port'])
 
 # Question 47: Create a dictionary with nested tuples: {'points': ((1, 2), (3, 4)), 'rgb': ((255, 0, 0), (0, 255, 0))}
 print("\nQuestion 47: Create a dictionary with nested tuples: {'points': ((1, 2), (3, 4)), 'rgb': ((255, 0, 0), (0, 255, 0))}")
-# Your code here
+d = {'points': ((1, 2), (3, 4)), 'rgb': ((255, 0, 0), (0, 255, 0))}
+print(d)
 
 # Question 48: Extract first point coordinates
 print("\nQuestion 48: Extract first point coordinates")
-# Your code here
+print(d['points'][0])
 
 # Question 49: Create a dictionary with nested sets: {'groups': {{1, 2, 3}, {4, 5, 6}}, 'categories': {{'a', 'b'}, {'c', 'd'}}}
 print("\nQuestion 49: Create a dictionary with nested sets: {'groups': {{1, 2, 3}, {4, 5, 6}}, 'categories': {{'a', 'b'}, {'c', 'd'}}}")
