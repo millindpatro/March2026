@@ -114,7 +114,12 @@ print("\nQuestion 15: Find the longest word in 'Python is a programming language
 
 # Question 16: Remove all punctuation from "Hello, World! How are you?"
 print("\nQuestion 16: Remove all punctuation from 'Hello, World! How are you?'")
-# Your code here
+s='Hello, World! How are you?'
+ans=''
+for i in s:
+    if(i.isspace()==True or i.isalnum()==True):
+        ans+=i
+print(ans)
 
 # Question 17: Check if string starts with "Python"
 print("\nQuestion 17: Check if string starts with 'Python'")
@@ -122,15 +127,24 @@ print("\nQuestion 17: Check if string starts with 'Python'")
 
 # Question 18: Find the index of first occurrence of 'o' in "Hello World"
 print("\nQuestion 18: Find the index of first occurrence of 'o' in 'Hello World'")
-# Your code here
+s='Hello World'
+for i in range(0,len(s)):
+  if(s[i]=='o'):
+    print(i)
+    break
 
 # Question 19: Split string "apple,banana,orange" by comma
 print("\nQuestion 19: Split string 'apple,banana,orange' by comma")
-# Your code here
+s='apple,banana,orange'
+s.split(',')
+print(s)
+
 
 # Question 20: Join list ['Python', 'is', 'awesome'] with spaces
 print("\nQuestion 20: Join list ['Python', 'is', 'awesome'] with spaces")
-# Your code here
+l=['Python', 'is', 'awesome']
+ans=' '.join(l)
+print(ans)
 
 # Question 21: Check if string contains only digits: "12345"
 print("\nQuestion 21: Check if string contains only digits: '12345'")
