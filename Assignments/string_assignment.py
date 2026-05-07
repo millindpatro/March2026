@@ -156,23 +156,32 @@ print("\nQuestion 22: Check if string contains only letters: 'HelloWorld'")
 
 # Question 23: Convert "hello world" to "hElLo WoRlD" (alternating case)
 print("\nQuestion 23: Convert 'hello world' to 'hElLo WoRlD' (alternating case)")
-# Your code here
+
 
 # Question 24: Find all positions of 'a' in "banana"
 print("\nQuestion 24: Find all positions of 'a' in 'banana'")
-# Your code here
+s='banana'
+for i in s:
+  if(s[i]=='a'):
+    print(i)
 
 # Question 25: Remove leading and trailing whitespace from "  Hello World  "
 print("\nQuestion 25: Remove leading and trailing whitespace from '  Hello World  '")
-# Your code here
+s='  Hello World  '
+s=s.strip()
+print(s)
 
 # Question 26: Check if string ends with "ing": "programming"
 print("\nQuestion 26: Check if string ends with 'ing': 'programming'")
-# Your code here
+s='programming'
+print(s.endswith('ing'))
 
 # Question 27: Replace first occurrence of 'o' with '0' in "Hello World"
 print("\nQuestion 27: Replace first occurrence of 'o' with '0' in 'Hello World'")
-# Your code here
+s='Hello World'
+s=s.replace('o','0',1)
+print(s)
+
 
 # Question 28: Find the shortest word in "Python is a programming language"
 print("\nQuestion 28: Find the shortest word in 'Python is a programming language'")
